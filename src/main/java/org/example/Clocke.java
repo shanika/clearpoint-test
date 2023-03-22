@@ -2,7 +2,10 @@ package org.example;
 
 public class Clocke {
 
-    public double calculate(String time) {
+    public double calculateAngle(String time) {
+
+        validateTimeInput(time);
+
         int hours = Integer.parseInt(time.substring(0, 2));
         int minutes = Integer.parseInt(time.substring(2));
 
@@ -22,5 +25,12 @@ public class Clocke {
         }
 
         return angle;
+    }
+
+    private static void validateTimeInput(String time) {
+        // Validate the input string to be a valid 24-hour clock time
+        if (!time.matches("^([01]?[0-9]|2[0-3])[0-5][0-9]$")) {
+            throw new IllegalArgumentException("Invalid time format. Please provide a valid 24-hour clock time. Example: 1230");
+        }
     }
 }
