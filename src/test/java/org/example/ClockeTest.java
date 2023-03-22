@@ -15,7 +15,7 @@ class ClockeTest {
             "1710, 265",
             "1200, 0",
     })
-    public void testCalculate(int time, double expectedAngle) {
+    public void testCalculate(String time, double expectedAngle) {
         Clocke clocke = new Clocke();
 
         double angle = clocke.calculate(time);
