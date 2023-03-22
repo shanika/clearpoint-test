@@ -87,7 +87,7 @@ Ensure you have the Java Development Kit (JDK) 17 installed on your system. If y
       gradlew.bat test build
       ```
 
-4. After the build is successful, run the application using the Gradle Wrapper:
+4. After the build is successful, run the executable JAR file by running the following command:
 
     ```
    java -jar build/libs/clearpoint-test-1.0-SNAPSHOT.jar
