@@ -47,3 +47,16 @@ ORDER BY d.driver_email, de.delivery_type;
 
 ```
 
+#### Simplified and optimized query
+Remove the inner join between Driver and Delivery tables since following query will produce the same result as above.
+```sql
+SELECT de.driver_email, de.delivery_type, SUM(dp.quantity) AS total_quantity
+FROM Delivery de
+JOIN DeliveryProduct dp ON de.delivery_id = dp.delivery_id
+WHERE 
+    de.delivery_date = '2021-09-21'
+GROUP BY de.driver_email, de.delivery_type
+ORDER BY de.driver_email, de.delivery_type;
+```
+
+### Question 2 - Please refer to the Clocke class in this repository.
