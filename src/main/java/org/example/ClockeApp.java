@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
-public class Main {
+public class ClockeApp {
     public static void main(String[] args) {
         Clocke clocke = new Clocke();
         Scanner scanner = new Scanner(System.in);

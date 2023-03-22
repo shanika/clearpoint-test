@@ -60,3 +60,37 @@ ORDER BY de.driver_email, de.delivery_type;
 ```
 
 ### Question 2 - Please refer to the Clocke class in this repository.
+
+Clocke is a simple app that calculates degree of angle between hour and minute hands of a clock.
+
+#### Prerequisites
+
+Ensure you have the Java Development Kit (JDK) 17 installed on your system. If you don't have it installed, download it from [AdoptOpenJDK](https://adoptopenjdk.net/).
+
+#### Build and Run the Application
+
+1. Clone the repository or download the source code to your local machine.
+
+2. Open a terminal or command prompt and navigate to the project's root directory (where the `build.gradle` file is located).
+
+3. Test and build the application using the Gradle Wrapper by running the following command:
+
+    - On Linux or macOS:
+
+      ```
+      ./gradlew test build
+      ```
+
+    - On Windows:
+
+      ```
+      gradlew.bat test build
+      ```
+
+   4. After the build is successful, run the application using the Gradle Wrapper:
+
+       ```
+      java -jar build/libs/clearpoint-test-1.0-SNAPSHOT.jar
+      ```
+
+The application will start, and you can interact with it through the terminal or command prompt.
