@@ -103,6 +103,6 @@ The following are a few remedies that can be applied to the given architecture:
 
 1. **Fix any performance issues in the batch process itself.**
 2. **Use a readonly replica of the database for the batch job, depending on the nature of the job.**
-3. **Introduce a new endpointin the usage storage component specifically for component A's consumption that doesn't talk to the database.** *Note: If this endpoint that checks HTTP status is a health check, be careful since the health check still needs to make a simple query to the database to check if it is running.*
+3. **Introduce a new endpoint in the usage storage component specifically for component A's consumption that doesn't talk to the database.** *Note: If this endpoint that checks HTTP status is a health check, be careful since the health check still needs to make a simple query to the database to check if it is running.*
 4. **Break component B's application logic into microservices with their own database, separated from the data being used by the batch job.**
 5. **Increase the database capacity (vertical scaling).** 
